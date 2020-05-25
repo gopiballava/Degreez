@@ -12,7 +12,7 @@
 		B7B795E0247B4EF300ED4077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B795DE247B4EF300ED4077 /* Main.storyboard */; };
 		B7B795E2247B4EF300ED4077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B795E1247B4EF300ED4077 /* Assets.xcassets */; };
 		B7B795E5247B4EF300ED4077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B795E3247B4EF300ED4077 /* LaunchScreen.storyboard */; };
-		B7B795EA247B4EF400ED4077 /* Degreez WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B7B795EA247B4EF400ED4077 /* Degreez.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B7B795E9247B4EF400ED4077 /* Degreez.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B7B795F0247B4EF400ED4077 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B795EE247B4EF400ED4077 /* Interface.storyboard */; };
 		B7B795F2247B4EF400ED4077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B795F1247B4EF400ED4077 /* Assets.xcassets */; };
 		B7B795F9247B4EF400ED4077 /* Degreez WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B7B795F8247B4EF400ED4077 /* Degreez WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,7 +64,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B7B795EA247B4EF400ED4077 /* Degreez WatchKit App.app in Embed Watch Content */,
+				B7B795EA247B4EF400ED4077 /* Degreez.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +79,7 @@
 		B7B795E1247B4EF300ED4077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7B795E4247B4EF300ED4077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7B795E6247B4EF300ED4077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Degreez WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B795E9247B4EF400ED4077 /* Degreez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Degreez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B795EF247B4EF400ED4077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B7B795F1247B4EF400ED4077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7B795F3247B4EF400ED4077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B795D5247B4EF300ED4077 /* Degreez.app */,
-				B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */,
+				B7B795E9247B4EF400ED4077 /* Degreez.app */,
 				B7B795F8247B4EF400ED4077 /* Degreez WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -218,7 +218,7 @@
 			);
 			name = "Degreez WatchKit App";
 			productName = "Degreez WatchKit App";
-			productReference = B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */;
+			productReference = B7B795E9247B4EF400ED4077 /* Degreez.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		B7B795F7247B4EF400ED4077 /* Degreez WatchKit Extension */ = {
@@ -552,7 +552,7 @@
 				IBSC_MODULE = Degreez_WatchKit_Extension;
 				INFOPLIST_FILE = "Degreez WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Degreez;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -572,7 +572,7 @@
 				IBSC_MODULE = Degreez_WatchKit_Extension;
 				INFOPLIST_FILE = "Degreez WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Degreez;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
