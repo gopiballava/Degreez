@@ -36,7 +36,7 @@ class WeatherAPI: NSObject, CLLocationManagerDelegate {
 	var currentLocation = CLLocation()
 	
 	var lastUpdate = Date(timeIntervalSince1970: 0)
-	let refreshThreshold: TimeInterval = 15 * TimeInterval.minute
+	let refreshThreshold: TimeInterval = 30 * TimeInterval.minute
 	
 	var kelvin: Kelvin = 233.15 {
 		didSet {
