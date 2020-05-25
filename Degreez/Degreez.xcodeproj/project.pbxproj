@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7B795D9247B4EF300ED4077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B795D8247B4EF300ED4077 /* AppDelegate.swift */; };
+		B7B795DD247B4EF300ED4077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B795DC247B4EF300ED4077 /* ViewController.swift */; };
+		B7B795E0247B4EF300ED4077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B795DE247B4EF300ED4077 /* Main.storyboard */; };
+		B7B795E2247B4EF300ED4077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B795E1247B4EF300ED4077 /* Assets.xcassets */; };
+		B7B795E5247B4EF300ED4077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B795E3247B4EF300ED4077 /* LaunchScreen.storyboard */; };
+		B7B795EA247B4EF400ED4077 /* Degreez WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B7B795F0247B4EF400ED4077 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B795EE247B4EF400ED4077 /* Interface.storyboard */; };
+		B7B795F2247B4EF400ED4077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B795F1247B4EF400ED4077 /* Assets.xcassets */; };
+		B7B795F9247B4EF400ED4077 /* Degreez WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B7B795F8247B4EF400ED4077 /* Degreez WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B7B795FE247B4EF400ED4077 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B795FD247B4EF400ED4077 /* InterfaceController.swift */; };
+		B7B79600247B4EF400ED4077 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B795FF247B4EF400ED4077 /* ExtensionDelegate.swift */; };
+		B7B79602247B4EF400ED4077 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B79601247B4EF400ED4077 /* NotificationController.swift */; };
+		B7B79604247B4EF400ED4077 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B79603247B4EF400ED4077 /* ComplicationController.swift */; };
+		B7B79606247B4EF500ED4077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B79605247B4EF500ED4077 /* Assets.xcassets */; };
+		B7B7961D247B4F5700ED4077 /* NetworksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7961A247B4F5700ED4077 /* NetworksAPI.swift */; };
+		B7B7961E247B4F5700ED4077 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7961B247B4F5700ED4077 /* Utils.swift */; };
+		B7B7961F247B4F5700ED4077 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7961C247B4F5700ED4077 /* WeatherAPI.swift */; };
+		B7B79620247B506600ED4077 /* NetworksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7961A247B4F5700ED4077 /* NetworksAPI.swift */; };
+		B7B79621247B506600ED4077 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7961B247B4F5700ED4077 /* Utils.swift */; };
+		B7B79622247B506600ED4077 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7961C247B4F5700ED4077 /* WeatherAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7B795EB247B4EF400ED4077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B795CD247B4EF300ED4077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B795E8247B4EF400ED4077;
+			remoteInfo = "Degreez WatchKit App";
+		};
+		B7B795FA247B4EF400ED4077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B795CD247B4EF300ED4077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B795F7247B4EF400ED4077;
+			remoteInfo = "Degreez WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7B7960E247B4EF500ED4077 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B7B795F9247B4EF400ED4077 /* Degreez WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B79612247B4EF500ED4077 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B7B795EA247B4EF400ED4077 /* Degreez WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B7B795D5247B4EF300ED4077 /* Degreez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Degreez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B795D8247B4EF300ED4077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7B795DC247B4EF300ED4077 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7B795DF247B4EF300ED4077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7B795E1247B4EF300ED4077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7B795E4247B4EF300ED4077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7B795E6247B4EF300ED4077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Degreez WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B795EF247B4EF400ED4077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B7B795F1247B4EF400ED4077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7B795F3247B4EF400ED4077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B795F8247B4EF400ED4077 /* Degreez WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Degreez WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B795FD247B4EF400ED4077 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B7B795FF247B4EF400ED4077 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B7B79601247B4EF400ED4077 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B7B79603247B4EF400ED4077 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B7B79605247B4EF500ED4077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7B79607247B4EF500ED4077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B79608247B4EF500ED4077 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B7B7961A247B4F5700ED4077 /* NetworksAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworksAPI.swift; sourceTree = "<group>"; };
+		B7B7961B247B4F5700ED4077 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B7B7961C247B4F5700ED4077 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7B795D2247B4EF300ED4077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B795F5247B4EF400ED4077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7B795CC247B4EF300ED4077 = {
+			isa = PBXGroup;
+			children = (
+				B7B79619247B4F5700ED4077 /* Shared */,
+				B7B795D7247B4EF300ED4077 /* Degreez */,
+				B7B795ED247B4EF400ED4077 /* Degreez WatchKit App */,
+				B7B795FC247B4EF400ED4077 /* Degreez WatchKit Extension */,
+				B7B795D6247B4EF300ED4077 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B795D6247B4EF300ED4077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B795D5247B4EF300ED4077 /* Degreez.app */,
+				B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */,
+				B7B795F8247B4EF400ED4077 /* Degreez WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B795D7247B4EF300ED4077 /* Degreez */ = {
+			isa = PBXGroup;
+			children = (
+				B7B795D8247B4EF300ED4077 /* AppDelegate.swift */,
+				B7B795DC247B4EF300ED4077 /* ViewController.swift */,
+				B7B795DE247B4EF300ED4077 /* Main.storyboard */,
+				B7B795E1247B4EF300ED4077 /* Assets.xcassets */,
+				B7B795E3247B4EF300ED4077 /* LaunchScreen.storyboard */,
+				B7B795E6247B4EF300ED4077 /* Info.plist */,
+			);
+			path = Degreez;
+			sourceTree = "<group>";
+		};
+		B7B795ED247B4EF400ED4077 /* Degreez WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B7B795EE247B4EF400ED4077 /* Interface.storyboard */,
+				B7B795F1247B4EF400ED4077 /* Assets.xcassets */,
+				B7B795F3247B4EF400ED4077 /* Info.plist */,
+			);
+			path = "Degreez WatchKit App";
+			sourceTree = "<group>";
+		};
+		B7B795FC247B4EF400ED4077 /* Degreez WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B7B795FD247B4EF400ED4077 /* InterfaceController.swift */,
+				B7B795FF247B4EF400ED4077 /* ExtensionDelegate.swift */,
+				B7B79601247B4EF400ED4077 /* NotificationController.swift */,
+				B7B79603247B4EF400ED4077 /* ComplicationController.swift */,
+				B7B79605247B4EF500ED4077 /* Assets.xcassets */,
+				B7B79607247B4EF500ED4077 /* Info.plist */,
+				B7B79608247B4EF500ED4077 /* PushNotificationPayload.apns */,
+			);
+			path = "Degreez WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B7B79619247B4F5700ED4077 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B7B7961A247B4F5700ED4077 /* NetworksAPI.swift */,
+				B7B7961B247B4F5700ED4077 /* Utils.swift */,
+				B7B7961C247B4F5700ED4077 /* WeatherAPI.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7B795D4247B4EF300ED4077 /* Degreez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B79613247B4EF500ED4077 /* Build configuration list for PBXNativeTarget "Degreez" */;
+			buildPhases = (
+				B7B795D1247B4EF300ED4077 /* Sources */,
+				B7B795D2247B4EF300ED4077 /* Frameworks */,
+				B7B795D3247B4EF300ED4077 /* Resources */,
+				B7B79612247B4EF500ED4077 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B795EC247B4EF400ED4077 /* PBXTargetDependency */,
+			);
+			name = Degreez;
+			productName = Degreez;
+			productReference = B7B795D5247B4EF300ED4077 /* Degreez.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7B795E8247B4EF400ED4077 /* Degreez WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B7960F247B4EF500ED4077 /* Build configuration list for PBXNativeTarget "Degreez WatchKit App" */;
+			buildPhases = (
+				B7B795E7247B4EF400ED4077 /* Resources */,
+				B7B7960E247B4EF500ED4077 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B795FB247B4EF400ED4077 /* PBXTargetDependency */,
+			);
+			name = "Degreez WatchKit App";
+			productName = "Degreez WatchKit App";
+			productReference = B7B795E9247B4EF400ED4077 /* Degreez WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B7B795F7247B4EF400ED4077 /* Degreez WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B7960B247B4EF500ED4077 /* Build configuration list for PBXNativeTarget "Degreez WatchKit Extension" */;
+			buildPhases = (
+				B7B795F4247B4EF400ED4077 /* Sources */,
+				B7B795F5247B4EF400ED4077 /* Frameworks */,
+				B7B795F6247B4EF400ED4077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Degreez WatchKit Extension";
+			productName = "Degreez WatchKit Extension";
+			productReference = B7B795F8247B4EF400ED4077 /* Degreez WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7B795CD247B4EF300ED4077 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ajay Raj Merchia";
+				TargetAttributes = {
+					B7B795D4247B4EF300ED4077 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					B7B795E8247B4EF400ED4077 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					B7B795F7247B4EF400ED4077 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = B7B795D0247B4EF300ED4077 /* Build configuration list for PBXProject "Degreez" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7B795CC247B4EF300ED4077;
+			productRefGroup = B7B795D6247B4EF300ED4077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7B795D4247B4EF300ED4077 /* Degreez */,
+				B7B795E8247B4EF400ED4077 /* Degreez WatchKit App */,
+				B7B795F7247B4EF400ED4077 /* Degreez WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7B795D3247B4EF300ED4077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B795E5247B4EF300ED4077 /* LaunchScreen.storyboard in Resources */,
+				B7B795E2247B4EF300ED4077 /* Assets.xcassets in Resources */,
+				B7B795E0247B4EF300ED4077 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B795E7247B4EF400ED4077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B795F2247B4EF400ED4077 /* Assets.xcassets in Resources */,
+				B7B795F0247B4EF400ED4077 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B795F6247B4EF400ED4077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B79606247B4EF500ED4077 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7B795D1247B4EF300ED4077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B7961E247B4F5700ED4077 /* Utils.swift in Sources */,
+				B7B795DD247B4EF300ED4077 /* ViewController.swift in Sources */,
+				B7B795D9247B4EF300ED4077 /* AppDelegate.swift in Sources */,
+				B7B7961F247B4F5700ED4077 /* WeatherAPI.swift in Sources */,
+				B7B7961D247B4F5700ED4077 /* NetworksAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B795F4247B4EF400ED4077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B79602247B4EF400ED4077 /* NotificationController.swift in Sources */,
+				B7B79622247B506600ED4077 /* WeatherAPI.swift in Sources */,
+				B7B79604247B4EF400ED4077 /* ComplicationController.swift in Sources */,
+				B7B79600247B4EF400ED4077 /* ExtensionDelegate.swift in Sources */,
+				B7B795FE247B4EF400ED4077 /* InterfaceController.swift in Sources */,
+				B7B79620247B506600ED4077 /* NetworksAPI.swift in Sources */,
+				B7B79621247B506600ED4077 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7B795EC247B4EF400ED4077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7B795E8247B4EF400ED4077 /* Degreez WatchKit App */;
+			targetProxy = B7B795EB247B4EF400ED4077 /* PBXContainerItemProxy */;
+		};
+		B7B795FB247B4EF400ED4077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7B795F7247B4EF400ED4077 /* Degreez WatchKit Extension */;
+			targetProxy = B7B795FA247B4EF400ED4077 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7B795DE247B4EF300ED4077 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B795DF247B4EF300ED4077 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7B795E3247B4EF300ED4077 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B795E4247B4EF300ED4077 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B7B795EE247B4EF400ED4077 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B795EF247B4EF400ED4077 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7B79609247B4EF500ED4077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7B7960A247B4EF500ED4077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7B7960C247B4EF500ED4077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = "Degreez WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		B7B7960D247B4EF500ED4077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = "Degreez WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		B7B79610247B4EF500ED4077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				IBSC_MODULE = Degreez_WatchKit_Extension;
+				INFOPLIST_FILE = "Degreez WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		B7B79611247B4EF500ED4077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				IBSC_MODULE = Degreez_WatchKit_Extension;
+				INFOPLIST_FILE = "Degreez WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		B7B79614247B4EF500ED4077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = Degreez/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B7B79615247B4EF500ED4077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = Degreez/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajaymerchia.Degreez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7B795D0247B4EF300ED4077 /* Build configuration list for PBXProject "Degreez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B79609247B4EF500ED4077 /* Debug */,
+				B7B7960A247B4EF500ED4077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B7960B247B4EF500ED4077 /* Build configuration list for PBXNativeTarget "Degreez WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B7960C247B4EF500ED4077 /* Debug */,
+				B7B7960D247B4EF500ED4077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B7960F247B4EF500ED4077 /* Build configuration list for PBXNativeTarget "Degreez WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B79610247B4EF500ED4077 /* Debug */,
+				B7B79611247B4EF500ED4077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B79613247B4EF500ED4077 /* Build configuration list for PBXNativeTarget "Degreez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B79614247B4EF500ED4077 /* Debug */,
+				B7B79615247B4EF500ED4077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7B795CD247B4EF300ED4077 /* Project object */;
+}
